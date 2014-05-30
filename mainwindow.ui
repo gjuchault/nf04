@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>NF04</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/ressources/img/nf04.png</normaloff>:/nf04.png</iconset>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau_Fichier"/>
+    <addaction name="actionOuvrir"/>
+    <addaction name="actionOuvrir_dans_une_nouvelle_fen_tre"/>
+    <addaction name="actionOuvrir_le_log_de_compilation"/>
+    <addaction name="actionOuvrir_le_code_C"/>
+    <addaction name="actionEnregistrer"/>
+    <addaction name="actionEnregistrer_Sous"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionSyntaxe"/>
+    <addaction name="actionA_propos"/>
+   </widget>
+   <widget class="QMenu" name="menuStyle">
+    <property name="title">
+     <string>Style</string>
+    </property>
+    <addaction name="actionFonc"/>
+    <addaction name="actionClair"/>
+   </widget>
+   <widget class="QMenu" name="menuLanguage">
+    <property name="title">
+     <string>Langage</string>
+    </property>
+    <addaction name="actionFran_ais"/>
+    <addaction name="actionAnglais"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuStyle"/>
+   <addaction name="menuAide"/>
+   <addaction name="menuLanguage"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/open.png</normaloff>:/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="statusTip">
+    <string>Ouvrir un fichier</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/save.png</normaloff>:/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer un fichier</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_Sous">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/saveas.png</normaloff>:/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer Sous</string>
+   </property>
+   <property name="statusTip">
+    <string>Enregistrer sous un nouveau nom</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/exit.png</normaloff>:/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="statusTip">
+    <string>Quitter le programme</string>
+   </property>
+  </action>
+  <action name="actionSyntaxe">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/syntax.png</normaloff>:/syntax.png</iconset>
+   </property>
+   <property name="text">
+    <string>Syntaxe</string>
+   </property>
+   <property name="statusTip">
+    <string>Rappel sur la syntaxe d'un algorithme</string>
+   </property>
+  </action>
+  <action name="actionA_propos">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/about.png</normaloff>:/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>À propos</string>
+   </property>
+   <property name="statusTip">
+    <string>Afficher les licences</string>
+   </property>
+  </action>
+  <action name="actionNouveau_Fichier">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/new.png</normaloff>:/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau Fichier</string>
+   </property>
+   <property name="statusTip">
+    <string>Créer un nouvel algorithme</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_le_code_C">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/cpp.png</normaloff>:/cpp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir le code C++</string>
+   </property>
+   <property name="statusTip">
+    <string>Ouvre le code C++ avec l'éditeur par défaut</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_dans_une_nouvelle_fen_tre">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/open_new.png</normaloff>:/open_new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir dans une nouvelle fenêtre</string>
+   </property>
+   <property name="statusTip">
+    <string>Ouvre le fichier dans une nouvelle fenêtre</string>
+   </property>
+  </action>
+  <action name="actionClair_3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/light.png</normaloff>:/light.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clair</string>
+   </property>
+   <property name="statusTip">
+    <string>Coloration syntaxique claire</string>
+   </property>
+  </action>
+  <action name="actionFonc">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/dark.png</normaloff>:/dark.png</iconset>
+   </property>
+   <property name="text">
+    <string>Foncé</string>
+   </property>
+   <property name="statusTip">
+    <string>Coloration syntaxique foncée</string>
+   </property>
+  </action>
+  <action name="actionClair">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/light.png</normaloff>:/light.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clair</string>
+   </property>
+   <property name="statusTip">
+    <string>Coloration syntaxique claire</string>
+   </property>
+  </action>
+  <action name="actionOuvrir_le_log_de_compilation">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ressources/img/log.png</normaloff>:/log.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir le log de compilation</string>
+   </property>
+   <property name="statusTip">
+    <string>Ouvre la sortie du compilateur C++</string>
+   </property>
+  </action>
+  <action name="actionFran_ais">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Français</string>
+   </property>
+  </action>
+  <action name="actionAnglais">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Anglais</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
