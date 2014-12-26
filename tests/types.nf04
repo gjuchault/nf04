@@ -1,0 +1,9 @@
+Algorithme <Nom>
+Types:
+Variables:
+a : Booléen
+b : Entier
+c : Caractère
+d : Tableau[1..10] d'entiers
+e : Tableau[1..10, 1..10] de caractères
+Instructions:

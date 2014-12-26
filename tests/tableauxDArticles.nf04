@@ -1,0 +1,7 @@
+Algorithme <Nom>
+Types:
+TPoint : article(x : Entier; y : Entier)
+TDroite : article(p1 : TPoint; p2 : TPoint)
+Variables:
+e : tableau[1..20] de TDroite
+Instructions:

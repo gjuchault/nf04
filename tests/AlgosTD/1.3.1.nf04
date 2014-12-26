@@ -1,0 +1,9 @@
+Algorithme Algo131
+Types:
+Variables:
+nombre : Réel
+Instructions:
+Ecrire("Veuillez entrer un nombre :"!)
+Lire(clavier!nombre)
+nombre <- E(nombre)
+Ecrire("La valeure absolue du nombre est : ", nombre!)

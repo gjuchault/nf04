@@ -1,0 +1,38 @@
+Algorithme 21
+Types:
+Variables:
+jour1 : Entier
+mois1 : Entier
+annee1 : Entier
+jour2 : Entier
+mois2 : Entier
+annee2 : Entier
+Instructions:
+Ecrire("Entrez le jour de la date 1"!)
+Lire(clavier!jour1)
+Ecrire("Entrez le mois de la date 1"!)
+Lire(clavier!mois1)
+Ecrire("Entrez l'annee de la date 1"!)
+Lire(clavier!annee1)
+Ecrire("Entrez le jour de la date 2"!)
+Lire(clavier!jour2)
+Ecrire("Entrez le mois de la date 2"!)
+Lire(clavier!mois2)
+Ecrire("Entrez l'année de la date 2"!)
+Lire(clavier!annee2)
+
+Si annee2 > annee1 Alors
+	Ecrire("La date 1 est plus ancienne"!)
+SinonSi annee1 > annee2 Alors
+	Ecrire("La date 2 est plus ancienne"!)
+SinonSi mois2 > mois1 Alors
+	Ecrire("La date 1 est plus ancienne"!)
+SinonSi mois1 > mois2 Alors
+	Ecrire("La date 2 est plus ancienne"!)
+SinonSi jour2 > jour1 Alors
+	Ecrire("La date 1 est plus ancienne"!)
+SinonSi jour1 > jour2 Alors
+	Ecrire("La date 2 est plus ancienne"!)
+Sinon
+	Ecrire("Ce sont les memes dates"!)
+FinSi

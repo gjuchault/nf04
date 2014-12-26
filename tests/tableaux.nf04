@@ -1,0 +1,8 @@
+Algorithme <Nom>
+Types:
+Variables:
+a: tableau[1..10][1..5] d'entiers
+str: tableau[1..20] de caractères
+Instructions:
+Lire(clavier!str)
+Ecrire(str!)

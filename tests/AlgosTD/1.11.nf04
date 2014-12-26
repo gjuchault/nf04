@@ -1,0 +1,25 @@
+Algorithme Algo111
+Types:
+Variables:
+nb1 : Entier
+nb2 : Entier
+Instructions:
+nb1 <- 0
+nb2 <- 0
+TantQue nb1 <= 0 Faire
+	Ecrire("Entrez un entier nb1"!)
+	Lire(clavier!nb1)
+FinTantQue
+TantQue nb2 <= 0 Faire
+	Ecrire("Entrez un entier nb2"!)
+	Lire(clavier!nb2)
+FinTantQue
+
+TantQue nb1 != nb2 Faire
+	Si nb1 > nb2 Alors
+		nb1 <- nb1 - nb2
+	Sinon
+		nb2 <- nb2 - nb1
+	FinSi
+FinTantQue
+Ecrire(nb1!)

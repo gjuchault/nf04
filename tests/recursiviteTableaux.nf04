@@ -1,0 +1,26 @@
+Sous-Algorithme PGCD
+Paramètres d'entrée:
+x : Entier
+y : Entier
+Paramètres de sortie:
+r : Tableau[1..] d'Entiers
+Traitement:
+Si y = 0 Alors
+    r[1] <- x
+Sinon
+    PGCD(y,x%y!r)
+FinSi
+Fin PGCD
+
+Algorithme Test
+Types:
+Variables:
+a : Entier
+b : Entier
+p : Tableau[1..1] d'Entiers
+Instructions:
+a <- 96
+b <- 36
+p[1] <- 1
+PGCD(a,b!p)
+Ecrire(p[1]!)

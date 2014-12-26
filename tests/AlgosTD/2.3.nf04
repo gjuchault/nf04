@@ -1,0 +1,21 @@
+Algorithme Algo22
+Types:
+Variables:
+n : Réel
+racineDef : Entier
+racineEx : Entier
+Instructions:
+Ecrire("Veuillez entrer le nombre dont la racine doit etre calculee"!)
+Lire(clavier!n)
+
+racineDef <- 1
+racineEx <- 1
+
+// Par excès
+TantQue racineEx * racineEx < n Faire
+	racineEx <- racineEx + 1
+FinTantQue
+racineDef <- racineEx - 1
+
+Ecrire("Racine par defaut : ", racineDef!)
+Ecrire("Racine par exces : ", racineEx!)

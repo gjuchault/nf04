@@ -1,0 +1,117 @@
+Sous-Algorithme SaisirValPoly
+Paramètres d'entrée:
+d : Entier
+Paramètres de sortie:
+p1 : TPoly
+Variables:
+n : Entier
+coef : Entier
+Traitement:
+p1.degre <- d
+Pour n allant de 1 à d par pas de 1 Faire
+	Ecrire("Entrez le coefficient ", n!)
+	Lire(clavier!coef)	
+	p1.coefs[n] <- coef
+FinPour
+Fin SaisirValPoly
+
+Sous-Algorithme SommePoly
+Paramètres d'entrée:
+p1 : TPoly
+p2 : TPoly
+Paramètres de sortie:
+p3 : TPoly
+Variables:
+n : Entier
+CopyP2 : TPoly
+Traitement:
+// On veut toujours degré(p1) < degré(p2)
+Si (p1.degre < p2.degre) Alors
+	CopyP2 <- p2
+	p2 <- p1
+	p1 <- CopyP2
+FinSi
+
+p3.degre <- p1.degre
+
+Pour n allant de 1 à p1.degre par pas de 1 Faire
+	Si (n <= p2.degre) Alors
+		p3.coefs[n] <- p1.coefs[n] + p2.coefs[n]
+	Sinon
+		p3.coefs[n] <- p1.coefs[n]
+	FinSi
+FinPour
+Fin SommePoly
+
+Sous-Algorithme ProdPoly
+Paramètres d'entrée:
+p1 : TPoly
+p2 : TPoly
+Paramètres de sortie:
+p3 : TPoly
+Variables:
+n : Entier
+i : Entier
+j : Entier
+CopyP2 : TPoly
+Traitement:
+// On veut toujours degré(p1) < degré(p2)
+Si (p1.degre < p2.degre) Alors
+	CopyP2 <- p2
+	p2 <- p1
+	p1 <- CopyP2
+FinSi
+
+p3.degre <- p1.degre + p2.degre - 1
+// Multiplication de polynômes simple qui suit O(n*i*j)
+Pour n allant de 1 à p3.degre par pas de 1 Faire
+	p3.coefs[n] <- 0
+	Pour i allant de 1 à p1.degre par pas de 1 Faire
+		Pour j allant de 1 à p2.degre par pas de 1 Faire
+			Si (i + j - 1 = n) Alors
+				p3.coefs[n] <- p3.coefs[n] + p1.coefs[i]*p2.coefs[j]
+			FinSi
+		FinPour
+	FinPour
+FinPour
+Fin ProdPoly
+
+Sous-Algorithme CalculerValProduit
+Paramètres d'entrée:
+p1 : TPoly
+x : Réel
+Paramètres de sortie:
+PX : Réel
+Variables:
+n : Entier
+Traitement:
+PX <- 0
+Pour n allant de p1.degre à 1 par pas de -1 Faire
+	PX <- PX * x + p1.coefs[n]
+FinPour
+Fin CalculerValProduit
+
+Algorithme Algo53
+Types:
+TPoly : article(degre: Entier; coefs: Tableau[1..100] d'entiers)
+Variables:
+poly1: TPoly
+poly2: TPoly
+poly3: TPoly
+valeur : Réel
+Instructions:
+SaisirValPoly(2!poly1)
+SaisirValPoly(4!poly2)
+ProdPoly(poly1,poly2!poly3)
+CalculerValProduit(poly3,12!valeur)
+// En effet cela fonctionne :
+// En entrant : 2 3 (==> 3x+2)
+// Puis : 4 3 2 1 (==> x^3+2x^2+3x+4)
+// On obtient bien : 8 18 13 8 3 (==> 8+18x+13x^2+8x^3+3x^4)
+Ecrire("Degre poly3 : ", poly3.degre!)
+Ecrire("Coef1 poly3 : ", poly3.coefs[1]!)
+Ecrire("Coef2 poly3 : ", poly3.coefs[2]!)
+Ecrire("Coef3 poly3 : ", poly3.coefs[3]!)
+Ecrire("Coef4 poly3 : ", poly3.coefs[4]!)
+Ecrire("Coef5 poly3 : ", poly3.coefs[5]!)
+Ecrire("Poly3 en 12 vaut : ", valeur!)

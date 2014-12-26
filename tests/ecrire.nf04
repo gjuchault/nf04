@@ -1,0 +1,17 @@
+Algorithme <Nom>
+Types:
+Variables:
+a : Entier
+b : Entier
+Instructions:
+a <- 10
+b <- 20
+
+Ecrire("a"!)
+Ecrire("a", "b"!)
+Ecrire("a", "b", "c", "d"!)
+Ecrire(a!)
+Ecrire(a, b!)
+Ecrire("a et b valent", a, b!)
+Ecrire("a=", a, "etb=", b!)
+Ecrire("pas, beau"!)

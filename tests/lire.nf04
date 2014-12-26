@@ -1,0 +1,11 @@
+Algorithme <Nom>
+Types:
+Variables:
+e : Entier
+Instructions:
+Ecrire("Entrez e"!)
+Lire(clavier!e)
+Ecrire(e!)
+Ecrire("pause"!)
+Lire(clavier!)
+Ecrire("paused"!)

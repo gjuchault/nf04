@@ -1,0 +1,18 @@
+Algorithme Algo133
+Types:
+Variables:
+m : Entier
+n : Entier
+i : Entier
+somme : Entier
+Instructions:
+Ecrire("Veuillez entrer l'index de depart"!)
+Lire(clavier!m)
+Ecrire("Veuillez entrer l'index de fin"!)
+Lire(clavier!n)
+
+somme <- 0
+Pour i allant de m à n par pas de 1 Faire
+	somme <- somme + 5 * i + 3
+FinPour
+Ecrire("La somme des termes de la suite vaut : ", somme!)

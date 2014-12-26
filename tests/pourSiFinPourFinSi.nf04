@@ -1,0 +1,10 @@
+Algorithme <Nom>
+Types:
+Variables:
+i : Entier
+Instructions:
+Pour i allant de 1 à 5 par pas de 1 Faire
+	Si i = 4 Alors
+		Ecrire("Salut"!)
+	FinPour
+FinSi

@@ -1,0 +1,24 @@
+Algorithme <Nom>
+Types:
+Variables:
+i : Entier
+j : Entier
+k : Entier
+l : Entier
+Instructions:
+i <- 1
+j <- 1
+k <- 5
+l <- 5
+Pour i de 1 à 5 par pas de 1
+	Ecrire(i!)
+FinPour
+Pour j allant de 1 à 5 par pas de 1 Faire
+	Ecrire(j!)
+FinPour
+Pour k de 5 à 1 par pas de -1
+	Ecrire(k!)
+FinPour
+Pour l allant de 5 à 1 par pas de -1 Faire
+	Ecrire(l!)
+FinPour

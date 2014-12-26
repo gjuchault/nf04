@@ -1,0 +1,39 @@
+Algorithme Algo220
+Types:
+Variables:
+N : Entier
+max : Entier
+aEnlever : Entier
+joueur1 : Booléen
+Instructions:
+Ecrire("Veuillez entrer le maximum"!)
+Lire(clavier!max)
+
+N <- 20
+aEnlever <- 0
+joueur1 <- vrai
+
+TantQue N > 0 Faire
+	TantQue aEnlever > max OU aEnlever <= 0 OU N - aEnlever < 0 Faire	
+		Si joueur1 Alors
+			Ecrire("N=", N, " Joueur1 joue"!)
+		Sinon
+			Ecrire("N=", N, " Joueur2 joue"!)
+		FinSi
+		Lire(clavier!aEnlever)
+	FinTantQue
+	N <- N - aEnlever
+	aEnlever <- 0
+
+	Si N = 0 Alors
+		Si joueur1 Alors
+			Ecrire("Joueur1 gagne !"!)
+		Sinon
+			Ecrire("Joueur2 gagne !"!)
+		FinSi
+	Sinon
+		joueur1 <- !joueur1
+	FinSi
+FinTantQue
+
+Ecrire("Fin de la partie"!)

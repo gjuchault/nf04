@@ -1,0 +1,27 @@
+Sous-Algorithme Ajouter
+Paramètres d'entrée:
+n : Entier
+Paramètres de sortie:
+y : Entier
+Variables:
+e : entier
+Traitement:
+y <- n + 1000
+Fin Ajouter
+
+Sous-Algorithme Ajouter2
+Paramètres d'entrée:
+n : Entier
+Paramètres de sortie:
+y : Entier
+Variables:
+e : Entier
+Traitement:
+y <- n + 2000
+Fin Ajouter2
+
+Algorithme <Nom>
+Types:
+Variables:
+e : Entier
+Instructions:

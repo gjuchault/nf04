@@ -1,0 +1,16 @@
+Algorithme Algo134
+Types:
+Variables:
+seuil : Réel
+valeur : Réel
+i : Entier
+Instructions:
+Ecrire("Veuillez entrer un seuil"!)
+Lire(clavier!seuil)
+i <- 1
+valeur <- 0
+TantQue valeur < seuil Faire
+	valeur <- 3 * i * i + 1
+	i <- i + 1
+FinTantQue
+Ecrire("Le rang minimal est : ", i!)

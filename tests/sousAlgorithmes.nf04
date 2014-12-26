@@ -1,0 +1,28 @@
+Sous-Algorithme: Fibonnaci
+Paramètres d'entrée:
+n : Entier
+Paramètres de sortie:
+f : Entier
+Variables:
+fM1 : Entier
+fM2 : Entier
+Instructions:
+Si n <= 1 Alors
+  f <- n
+Sinon
+  Fibonnaci(n - 1!fM1)
+  Fibonnaci(n - 2!fM2)
+  f <- fM1 + fM2
+FinSi
+Fin Fibonnaci
+
+Algorithme Algo_Fibo
+Types:
+Variables:
+x : Entier
+resultat : Entier
+Instructions:
+Ecrire("Calculer fibonnaci a l'ordre ?"!)
+Lire(clavier!x)
+Fibonnaci(x!resultat)
+Ecrire(resultat!)

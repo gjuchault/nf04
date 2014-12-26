@@ -1,0 +1,23 @@
+Algorithme Algo218
+Types:
+Variables:
+x : Entier
+i : Entier
+estPremier : Booléen
+Instructions:
+Ecrire("Veuillez entrer un nombre"!)
+Lire(clavier!x)
+
+estPremier <- vrai
+Pour i allant de 2 à E(x/2) par pas de 1 Faire
+	Si x % i = 0 Alors
+		Ecrire(i, " divise ", x!)
+		estPremier <- faux
+	FinSi
+FinPour
+
+Si estPremier Alors
+	Ecrire(x, " est premier"!)
+Sinon
+	Ecrire(x, " n'est pas premier"!)
+FinSi

@@ -1,0 +1,7 @@
+Algorithme <Nom>
+Types:
+TDessin : article(p1 : tableau[1..20][1..5] d'entiers; p2 : tableau[1..5] de caractères)
+TBlabla : article(x : TDessin)
+Variables:
+e : TBlabla
+Instructions:

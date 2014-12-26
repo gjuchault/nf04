@@ -1,0 +1,19 @@
+Algorithme Algo214
+Types:
+Variables:
+x : Réel
+coef : Réel
+i : Entier
+P : Réel
+Instructions:
+Ecrire("Donnez la valeur de x"!)
+Lire(clavier!x)
+
+P <- 0
+Pour i allant de 1 à 4 par pas de 1 Faire
+	Ecrire("Entrez le coefficiant ", i!)
+	Lire(clavier!coef)
+	P <- P * x + coef
+FinPour
+
+Ecrire("La valeur est : ", P!)

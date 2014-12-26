@@ -1,0 +1,14 @@
+Algorithme Algo132
+Types:
+Variables:
+nombre : Entier
+somme : Entier
+Instructions:
+Ecrire("Veuillez entrer un nombre :"!)
+Lire(clavier!nombre)
+somme <- 0
+TantQue nombre != 0 Faire
+	somme <- somme + nombre % 10
+	nombre <- nombre / 10
+FinTantQue
+Ecrire("La somme des chiffres du nombre est : ", somme!)

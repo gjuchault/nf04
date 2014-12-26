@@ -1,0 +1,45 @@
+Sous-Algorithme OrdreChaine
+Paramètres d'entrée:
+c1 : tableau[1..] de caractères
+c2 : tableau[1..] de caractères
+t : Entier
+Paramètres de sortie:
+valeur : Entier
+Variables:
+n : Entier
+continuer : Booléen
+Traitement:
+n <- 1
+continuer <- vrai
+valeur <- 0
+TantQue continuer Faire
+	Si (n = t) OU (c1[n] = '\0') OU (c2[n] = '\0') Alors
+		continuer <- faux
+	Sinon
+		Si (c1[n] > c2[n]) Alors
+			valeur <- 1
+			continuer <- faux
+		SinonSi (c2[n] > c1[n]) Alors
+			valeur <- 2
+			continuer <- vrai
+		FinSi
+	FinSi
+	n <- n + 1
+FinTantQue
+Fin OrdreChaine
+
+Algorithme Algo52
+Types:
+Variables:
+chaine1 : tableau[1..10] de caractères
+chaine2 : tableau[1..10] de caractères
+chaine3 : tableau[1..10] de caractères
+result : Entier
+Instructions:
+Lire(clavier!chaine1)
+Lire(clavier!chaine2)
+Lire(clavier!chaine3)
+OrdreChaine(chaine1,chaine2,10!result)
+Ecrire(result!)
+OrdreChaine(chaine1,chaine3,10!result)
+Ecrire(result!)

@@ -1,0 +1,12 @@
+Algorithme Algo135
+Types:
+Variables:
+lettre : Caractère
+Instructions:
+Ecrire("Entrez une lettre"!)
+Lire(clavier!lettre)
+Si lettre >= 'A' Et lettre <= 'Z' Alors
+	Ecrire("La lettre est une majuscule"!)
+Sinon
+	Ecrire("La lettre n'est pas une majuscule"!)
+FinSi

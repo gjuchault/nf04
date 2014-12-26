@@ -1,0 +1,38 @@
+Sous-Algorithme AddTab
+Paramètres d'entrée:
+f : Tableau[1..][1..] d'entiers
+n : entier
+m : entier
+Paramètres de sortie:
+t : Tableau[1..2][1..2] d'entiers
+Variables:
+i : entier
+j : entier
+Instructions:
+Pour i allant de 1 à n par pas de 1
+	Pour j allant de 1 à m par pas de 1
+		f[i][j] <- f[i][j] + 1000
+		t[i][j] <- f[i][j]
+	FinPour
+FinPour
+Fin AddTab
+
+Algorithme <Nom>
+Types:
+Variables:
+e : Tableau[1..2][1..2] d'entiers
+blabla : Tableau[1..2][1..2] d'entiers
+i : Entier
+j : Entier
+Instructions:
+e[1][1] <- 1
+e[1][2] <- 2
+e[2][1] <- 3
+e[2][2] <- 4
+AddTab(e, 2, 2!blabla)
+Pour i allant de 1 à 2 par pas de 1
+	Pour j allant de 1 à 2 par pas de 1
+		Ecrire(e[i][j]!)
+		Ecrire(blabla[i][j]!)
+	FinPour
+FinPour

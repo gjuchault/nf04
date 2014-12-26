@@ -1,0 +1,76 @@
+Types:
+TPoly : article(coef : tableau[0..99] de réels , degre : entier)
+
+Sous-Algorithme SaisirValPoly
+Paramètres d'entrée :
+Paramètres de sortie : 
+P:TPoly
+Variables:
+ind:entier
+d:entier
+coeff:entier
+Instructions:
+Ecrire("Quel est le degre du polynome (inferieur a 99) ?"!)
+Lire(clavier! d)
+P.degre<-d
+Pour ind allant de 0 à d par pas de 1
+	Ecrire("Coefficient du monome de degre ", ind, " ?"!)
+	Lire(clavier!coeff)
+	P.coef[ind]<-coeff
+FinPour
+Fin SaisirValPoly
+
+Sous-Algorithme SommePoly
+Paramètres d'entrée :
+P1 : TPoly
+P2 : TPoly
+Paramètres de sortie :
+P3 : TPoly
+Variables :
+ind:entier
+mindeg:entier
+maxdeg:entier
+Instructions :
+Si (P1.degre<P2.degre) alors
+	mindeg<-P1.degre
+	maxdeg<-P2.degre
+Sinon
+	maxdeg<-P1.degre
+	mindeg<-P2.degre
+FinSi
+P3.degre<-maxdeg
+//Valeur à corriger si coeff opposés
+Pour ind allant de 0 à mindeg par pas de 1
+	P3.coef[ind]<-P1.coef[ind]+P2.coef[ind]
+FinPour
+Pour ind allant de mindeg+1 à maxdeg par pas de 1
+	Si (maxdeg=P1.degre) alors
+		P3.coef[ind]<-P1.coef[ind]
+	Sinon
+		P3.coef[ind]<-P2.coef[ind]
+	FinSi
+FinPour
+//Cas d'egalite des degres a traiter a posteriori
+ind<-P3->degre
+TantQue (P3->coef[ind]=0) et (ind>=0) Faire
+	ind<-ind-1
+FinTantQue
+P3.degre<-ind
+Fin SommePoly
+
+Algorithme Polynomes
+Variables :
+P : TPoly
+Q : TPoly
+ind:entier
+Instructions :
+Ecrire("Polynome 1 ?"!)
+SaisirValPoly(!P)
+Ecrire("Polynome 2 ?"!)
+SaisirValPoly(!Q)
+SommePoly(P,Q!P)
+Ecrire("degré de la somme des deux polynomes :", P.degre !)
+Pour ind allant de 0 à P.degre par pas de 1
+	Ecrire(P.coef[ind],"x^", ind,"+" !)
+FinPour
+Fin Polynomes

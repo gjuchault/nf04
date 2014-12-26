@@ -1,0 +1,31 @@
+Sous-Algorithme: AjouterTab
+Paramètres d'entrée:
+n : Entier
+x : Tableau[1..] d'entiers
+y : Tableau[1..] d'entiers
+Paramètres de sortie:
+z : Tableau[1..] d'entiers
+Variables:
+i : Entier
+Traitement:
+Pour i allant de 1 à n par pas de 1
+	z[i] <- x[i] + y[i]
+Finpour
+Fin AjouterTab
+
+Algorithme <Nom>
+Types:
+Variables:
+a : Tableau[1..2] d'entiers
+b : Tableau[1..2] d'entiers
+c : Tableau[1..2] d'entiers
+x : Entier
+Instructions:
+a[1] <- 5
+b[1] <- 30
+a[2] <- 20
+b[2] <- 15
+AjouterTab(2, a, b!c)
+Pour x allant de 1 à 2 par pas de 1
+    Ecrire(c[x]!)
+Finpour

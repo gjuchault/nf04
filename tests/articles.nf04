@@ -1,0 +1,11 @@
+Algorithme <Nom>
+Types:
+TPoint: article(x: Entier; y: Entier)
+TDroite: article(p1: TPoint; p2: TPoint)
+Variables:
+d1: TDroite
+Instructions:
+d1.p1.x <- 0
+d1.p1.y <- 0
+d1.p2.x <- 1
+d1.p2.y <- 1

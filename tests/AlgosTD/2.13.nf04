@@ -1,0 +1,36 @@
+Algorithme Algo213
+Types:
+Variables:
+S : Réel
+N : Entier
+T : Réel
+M : Réel
+signe : Entier
+lambda : Réel
+x : Réel
+pi : Réel
+Instructions:
+x <- 10
+pi <- 3.14159265359
+TantQue abs(x) >= pi/2 Faire
+	Ecrire("Entrez le radian du sinus à calculer (entre pi/2 & -pi/2)"!)
+	Lire(clavier!x)
+FinTantQue
+Ecrire("A quelle precision doit etre le sinus ?"!)
+Lire(clavier!lambda)
+
+S <- x
+N <- 0
+T <- 1
+M <- x*x*x/6
+signe <- -1
+
+TantQue M > lambda Faire
+	N <- N + 1
+	T <- T * (x*x)/((2*N+3)*(2*N+2))
+	M <- M * T
+	S <- S + signe * T
+	signe <- -1 * signe
+FinTantQue
+
+Ecrire("La valeur de sin(", x, ") est :", S!)

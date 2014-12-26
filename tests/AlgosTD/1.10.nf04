@@ -1,0 +1,21 @@
+Algorithme Algo110
+Types:
+Variables:
+fifi : Entier
+bubu : Entier
+dada : Entier
+nono : Entier
+Instructions:
+Ecrire("Entrez un entier"!)
+Lire(clavier!fifi)
+Ecrire("Entrz un entier"!)
+Lire(clavier!bubu)
+nono <- fifi
+dada <- 0
+TantQue nono >= bubu Faire
+	Ecrire("Tour numero ", dada!)
+	Ecrire("Valeur de nono : ", nono!) 
+	nono <- nono - bubu
+	dada <- dada + 1
+FinTantQue
+Ecrire(dada!)

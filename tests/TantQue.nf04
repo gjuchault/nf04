@@ -1,0 +1,17 @@
+Algorithme <Nom>
+Types:
+Variables:
+e:Entier
+Traitement:
+e <- 0
+TaNTQue e < 5 Faire
+	e <- e + 1
+FinTantQue
+
+TantQue e < 10
+	e <- e + 1
+FinTq
+
+TantQue e < 20 faire
+	e <- e + 20
+FinTantQue
